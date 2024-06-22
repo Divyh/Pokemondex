@@ -36,7 +36,7 @@ const createPokemonCard = (pokemon) => {
   pokemonElem.classList.add("pokemon");
   // name
   //id
-  let name = pokemon.name[0].toUpperCase();
+  let name = pokemon.name[0].toUpperCase() + pokemon.name.slice(1);
   const id = pokemon.id.toString();
 
   const poke_types = pokemon.types.map((type) => type.type.name); //api
